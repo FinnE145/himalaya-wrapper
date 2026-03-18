@@ -28,3 +28,14 @@ envelopes = client.list_unread_envelopes()
 python -m build
 python -m twine upload dist/*
 ```
+
+## TestPyPI Release Candidate Flow
+
+Push a release-candidate tag to trigger the TestPyPI workflow:
+
+```bash
+git tag v0.1.0-rc1
+git push origin v0.1.0-rc1
+```
+
+This runs `.github/workflows/publish-testpypi.yml` and publishes to TestPyPI.
