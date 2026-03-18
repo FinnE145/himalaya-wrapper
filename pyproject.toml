@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "himalaya-wrapper"
+version = "0.1.0"
+description = "A lightweight Python wrapper for the Himalaya mail client CLI."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Your Name", email = "your.email@example.com"},
+]
+keywords = ["himalaya", "email", "cli", "mail"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Topic :: Communications :: Email",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/himalaya-wrapper"
+"Bug Reports" = "https://github.com/yourusername/himalaya-wrapper/issues"
+"Source Code" = "https://github.com/yourusername/himalaya-wrapper"
+
+[tool.setuptools]
+packages = ["himalaya_wrapper"]
